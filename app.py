@@ -50,7 +50,7 @@ def image_to_raw_1bit(img: Image.Image, width=400, height=300) -> bytes:
     img_1bit = img.convert("1", dither=Image.FLOYDSTEINBERG)
     arr = np.array(img_1bit, dtype=np.uint8)
     # Опционально: инвертируйте, если e-Ink показывает негатив
-    # arr = 1 - arr
+    arr = 1 - arr
     packed = np.packbits(arr, axis=1)
     return packed.tobytes()
 
