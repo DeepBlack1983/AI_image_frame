@@ -16,12 +16,17 @@ if not FB_API_KEY or not FB_API_SECRET:
     raise RuntimeError("❌ Отсутствуют FB_API_KEY или FB_API_SECRET")
 
 PROMPTS = [
-    "abstract geometric pattern",
-    "minimalist line art",
-    "monochrome ink sketch",
+    "pretty dog",
+    "retrowave futuristic",
+    "retrofuturistic robot",
     "high contrast black and white illustration",
     "dithered portrait",
-    "zen circle on white background"
+    "castle in mountains and clouds",
+    "cyberpunk city skyline",
+    "industrial landscape",
+    "fantsy characters in magic forest",
+    "steampunk victorian illustration",
+    "sovietpunk poster"
 ]
 
 def get_prompt():
